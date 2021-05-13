@@ -1,0 +1,39 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+    min-height: 15px;
+}
+
+.list__tasks {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 10px;
+    grid-gap: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.list__item {
+    word-break: break-all;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    grid-column: 1;
+    background-color: green;
+    border: none;
+    color: white;
+    width: 33px;
+    height: 33px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__button--remove {
+    background-color: red;
+    color: white;
+    grid-column: 3;
+}
