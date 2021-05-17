@@ -13,9 +13,10 @@
 
 .form__field {
     border: 1px solid #eee;
-    height: 30px;
-    padding: 10px;
+    height: 35px;
+    padding: 15px;
     font-size: 15px;
+    margin-top: 5px;
 }
 
 .form__button {
@@ -23,9 +24,10 @@
     color: white;
     border-style: none;
     font-weight: lighter;
-    height: 30px;
+    height: 35px;
     text-align: center;
     font-size: 15px;
+    margin-top: 5px;
 }
 
 .form__button:hover {
