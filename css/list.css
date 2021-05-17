@@ -32,9 +32,14 @@
     align-items: center;
     justify-content: center;
 }
-
+.list__button:hover {
+    background-color: hsl(120, 56%, 36%);
+}
 .list__button--remove {
     background-color: red;
     color: white;
     grid-column: 3;
 }
+.list__button--remove:hover {
+    background-color: rgb(233, 53, 53);
+
