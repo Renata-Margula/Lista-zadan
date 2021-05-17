@@ -69,11 +69,10 @@
 
         if (newTaskContent === "") {
             newTaskInput.focus();
+            return;
         }
-        else {
-            addNewTask(newTaskContent);
-            clearNewTaskInput(newTaskInput);
-        }
+        addNewTask(newTaskContent);
+        clearNewTaskInput(newTaskInput);
     };
     const init = () => {
         render();
