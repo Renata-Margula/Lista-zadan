@@ -28,12 +28,11 @@
     text-align: center;
     font-size: 15px;
     margin-top: 5px;
+    cursor: pointer;
+    transition: 1.5s;
 }
 
 .form__button:hover {
-    background-color: hsl(180, 100%, 20%);
-}
-
-.form__button:active {
-    background-color: hsl(180, 100%, 25%);
+    transform: scale(1.2);
+    background-color: hsl(180, 100%, 30%);
 }

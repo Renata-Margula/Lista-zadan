@@ -21,6 +21,10 @@
     text-decoration: line-through;
 }
 
+.list__item--hidden {
+    display: none;
+}
+
 .list__button {
     grid-column: 1;
     background-color: green;
@@ -31,16 +35,23 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    transition: 1s;
 }
+
 .list__button:hover {
-    background-color: hsl(120, 56%, 36%);
+    background-color: hsl(120, 100%, 30%);
 }
+
 .list__button--remove {
     background-color: red;
     color: white;
     grid-column: 3;
 }
-.list__button--remove:hover {
-    background-color: rgb(233, 53, 53);
 
+.list__button--remove:hover {
+    background-color: hsl(0, 100%, 70%);
+}
+
+.list__tasks--hidden {
+    display: none;
 }
