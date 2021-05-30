@@ -46,7 +46,7 @@
             button.disabled = true;
         }
     };
-    const bindEvents = () => {
+    const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -54,6 +54,8 @@
                 removeTask(index);
             });
         });
+    };
+    const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -61,20 +63,22 @@
                 toggleTaskDone(index);
             });
         });
-
+    };
+    const bindToggleHideDone = () => {
         const hideDoneTasksButton = document.querySelector(".js-allDoneHidden");
         hideDoneTasksButton.addEventListener("click", () => {
             hideDoneTasks = !hideDoneTasks;
             render();
         });
+    };
+    const markAllDoneTasks = () => {
+    const markAllDoneTasksButton = document.querySelector(".js-markAllDone");
+    disableAllDoneButton(markAllDoneTasksButton)
+    markAllDoneTasksButton.addEventListener("click", () => {
+        markAllTasksDone();
+    });
+};
 
-        const markAllDoneTasksButton = document.querySelector(".js-markAllDone");
-        disableAllDoneButton(markAllDoneTasksButton)
-        markAllDoneTasksButton.addEventListener("click", () => {
-            markAllTasksDone();
-        });
-
-    }
     const renderTasks = () => {
         let htmlString = "";
 
@@ -110,7 +114,10 @@
     const render = () => {
         renderTasks();
         renderButtons();
-        bindEvents();
+        bindRemoveEvents();
+        bindToggleDoneEvents();
+        bindToggleHideDone();
+        markAllDoneTasks();
     };
     const onFormSubmit = (event) => {
         event.preventDefault();
