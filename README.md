@@ -15,7 +15,7 @@ You can add your tasks, delete them, or mark them as done and then hide.
 - ES6+ features
 
 ## Usage
-![](https://github.com/shadoo1/Lista-zadan/blob/main/images/usage.gif?raw=true)
+![](https://github.com/shadoo1/Lista-zadan/blob/main/images/usage2.gif?raw=true)
 
 Enjoy! 🤗
 
